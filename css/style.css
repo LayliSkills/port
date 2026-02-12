@@ -16,7 +16,8 @@ body{font-family:system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial;
 
 /* Hero text should use the accent color as requested */
 .hero{color:var(--accent)}
-.hero .lead, .hero a.btn{color:var(--accent)}
+.hero .lead{color:#fff !important;font-weight:700}
+.hero a.btn{color:var(--accent)}
 .showcase-card{max-width:360px;margin-left:auto}
 .profile-pic{width:96px;height:96px;border-radius:50%;border:4px solid #fff;position:absolute;right:12px;bottom:-32px;box-shadow:0 6px 18px rgba(0,0,0,0.18)}
 h1.display-5{font-weight:700}
