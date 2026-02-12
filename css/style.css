@@ -1,0 +1,34 @@
+:root{
+	--primary: #0d6efd;
+	--dark: #0b1220;
+	--accent: #273040;
+}
+*{box-sizing:border-box}
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial;line-height:1.5;margin:0;color:#222}
+.hero{position:relative;background-image:url('../img/main-1.jpg');background-size:cover;background-position:center;color:#fff;min-height:70vh;display:flex;align-items:center}
+.hero::before{content:"";position:absolute;inset:0;background:rgba(0,0,0,0.35);}
+.hero > .container{position:relative;z-index:2}
+
+/* Navbar overrides */
+.navbar{background-color:var(--accent) !important}
+.navbar .navbar-brand, .navbar .nav-link{color:#fff !important;font-weight:700}
+.navbar .nav-link:hover{opacity:0.9}
+
+/* Hero text should use the accent color as requested */
+.hero{color:var(--accent)}
+.hero .lead, .hero a.btn{color:var(--accent)}
+.showcase-card{max-width:360px;margin-left:auto}
+.profile-pic{width:96px;height:96px;border-radius:50%;border:4px solid #fff;position:absolute;right:12px;bottom:-32px;box-shadow:0 6px 18px rgba(0,0,0,0.18)}
+h1.display-5{font-weight:700}
+section{padding-top:2rem;padding-bottom:2rem}
+.skill{background:#fff;border:1px solid #eee}
+.card{border:1px solid #e9ecef}
+footer{background:#f8f9fa}
+
+@media (max-width:767px){
+	.profile-pic{right:16px;bottom:-24px;width:72px;height:72px}
+	.showcase-card{max-width:100%;margin-top:1rem}
+}
+
+/* small helpers */
+.text-muted{color:#6c757d}
